@@ -2,10 +2,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 // import HomeView from '../views/HomeView.vue'
 import LoginView from '../components/login.vue'
 import registerUser from '../components/registerUser.vue'
-import dashboardView from '../components/dashboard.vue'
+import dashboardView from '@/components/dashboard.vue'
 import personasView from '../components/personas.vue'
 import usuariosView from '../components/usuarios.vue'
 import recetaMedica from '../components/recetaMedica.vue'
+import piePagina from '@/components/piePagina.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -29,7 +30,8 @@ const router = createRouter({
           path:'/receta',
           name:'receta',
           component: recetaMedica
-        }
+        },
+        {path:'/piepagina', name: 'piepagina', component: piePagina},
       ]
     },
     
