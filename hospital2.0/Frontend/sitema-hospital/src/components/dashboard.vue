@@ -332,5 +332,13 @@
       </div>
    </div> -->
 </div>
-
+<PiePagina></PiePagina>
 </template>
+<script>
+import PiePagina from './piePagina.vue'
+export default {
+  components: {
+    PiePagina
+  }
+}
+</script>
